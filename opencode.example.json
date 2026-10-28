@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "google-workspace": {
+        "type": "local",
+        "command": ["google-workspace-mcp"],
+        "environment": {
+          "GOOGLE_CLIENT_ID": "{env:GOOGLE_CLIENT_ID}",
+          "GOOGLE_CLIENT_SECRET": "{env:GOOGLE_CLIENT_SECRET}",
+          "GOOGLE_TOKEN_PATH": "{env:GOOGLE_TOKEN_PATH}",
+          "MCP_READ_ONLY": "{env:MCP_READ_ONLY}",
+          "MCP_REQUIRE_CONFIRMATION": "{env:MCP_REQUIRE_CONFIRMATION}"
+        }
+      }
+    }
+  }
+}
